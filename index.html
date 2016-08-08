@@ -1,20 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css">
-    <script src="/stylesheets/jquery-3.1.0.min.js"></script>
-    <script src="/libs/exceed.lib.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+  <title>Exiting Boat | Home</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!--external css-->
+
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css">
+  <link href="css/bootstrap-switch.css" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-responsive.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
-    <div id="container"></div>
-    <script src="bundle.js"></script>
-</body>
 
+  <section id="container" >
+    <!-- **********************************************************************************************************************************************************
+    TOP BAR CONTENT & NOTIFICATIONS
+    *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+
+      </div>
+      <!--logo start-->
+      <a href="index.html" class="logo"><b>EXISTING BOAT</b></a>
+      <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+
+        </ul>
+        <!--  notification end -->
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="lock_screen.html" >Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+
+    <!-- **********************************************************************************************************************************************************
+    MAIN SIDEBAR MENU
+    *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar"  class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+
+          <p class="centered"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+          <h5 class="centered">EXCEED CAMP13</h5>
+
+          <li class="mt">
+            <a  class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sub-menu">
+            <a onclick="showModal2()">
+              <i class="fa fa-desktop"></i>
+              <span>Real-Time Instruction</span>
+            </a>
+          </li>
+
+
+
+
+        </li>
+      </ul>
+      <!-- sidebar menu end-->
+    </div>
+  </aside>
+  <!--sidebar end-->
+
+  <!-- **********************************************************************************************************************************************************
+  MAIN CONTENT
+  *********************************************************************************************************************************************************** -->
+  <!--main content start-->
+  <section id="main-content">
+  </section><! --/wrapper -->
+</section><!-- /MAIN CONTENT -->
+<section id="main-content">
+  <section class="wrapper site-min-height">
+    <h3><i class="fa fa-angle-right"></i>BOAT STATUS | DATA ANALYTICS</h3>
+    <!-- //////////Model///////////////// -->
+    <div id="modal2" class="modal bottom-sheet" style="max-height:100%;">
+      <div class="modal-content">
+        <h2>Real-Time Instruction</h2>
+        <br />
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <img id="insPic" src="photo/green.jpg" alt="" class="circle">
+          </br>
+          <span id="insTxt" class="title">You're safe.
+          </span>
+
+          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ///////////////////////// -->
+
+
+  <div class="progress">
+    <div id="overallBoat" class="progress-bar progress-bar-striped active" role="progressbar"
+    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">Your Safety
+  </div>
+</div>
+
+
+
+<!-- main content start -->
+<!-- <a class="waves-effect waves-light btn" onclick="Rain()">Rain+</a>
+<a class="waves-effect waves-light btn" onclick="Sun()">Rain-</a>
+<a class="waves-effect waves-light btn" onclick="accelUp()">Balance+</a>
+<a class="waves-effect waves-light btn" onclick="accelDown()">Balance-</a>
+<a class="waves-effect waves-light btn" onclick="sonarIn()">Sonar+</a>
+<a class="waves-effect waves-light btn" onclick="sonarOut()">Sonar-</a>
+<a class="waves-effect waves-light btn" onclick="comPass()">MagneticTest-</a> -->
+
+<div class="row mt">
+  <div class="col-lg-12">
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-4 col-sm-4 mb">
+        <!-- WHITE PANEL - TOP USER -->
+        <div class="white-panel pn">
+          <div class="white-header">
+            <h5 id="RAINHEAD">RAIN SENSOR</h5>
+          </div>
+
+          <img id="picRain" src="/photo/sunny.gif" />
+        </div>
+        <div id="cardCont" class="card-content">
+          <h2 class="center-align" id="percent">Rainfall : 0% </h2>
+          <div class="progress progress-striped active" style="margin-left:30px; margin-bottom:10px; width:80%;">
+            <div id="progressRain" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+            </div>
+          </div>
+          <div class="center-align" id="Warn">
+            Normal weather
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 mb">
+        <!-- REVENUE PANEL -->
+        <div class="green-panel pn">
+          <div class="green-header">
+            <h5>BOAT BALANCING</h5>
+          </div>
+          <div class="chart mt">
+            <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"></div>
+          </div>
+          <div>
+            <canvas id="smoothie-chart" width="304" height="209"></canvas>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mb">
+        <div class="darkblue-panel pn">
+          <div class="darkblue-header">
+            <h5>SONAR SYSTEM</h5>
+          </div>
+          <img id="sonarPic" src="/photo/sonar0.gif" style="margin-top:-5px; margin-bottom:15px;"/>
+
+          <footer>
+            <div id="sonarStatus">Status : Normal</div>
+          </footer>
+        </div><! -- /darkblue panel -->
+      </div><!-- /col-md-4 -->
+
+      <div class="col-lg-4 col-md-4 col-sm-4 mb">
+        <div class="product-panel-2 pn">
+          <img id = "imagebox" src="./photo/basic.png" >
+          <h5 class="mt">Sun-Roof System</h5>
+          <h6 id="statusSun" >Status : OFF</h6>
+          <input type="checkbox" id="roofToggle" data-size="large">
+        </input>
+      </div>
+    </div><! --/col-md-4 -->
+
+
+    <div class="col-md-4 col-sm-4 mb">
+      <div class="darkblue-panel pn">
+        <div class="darkblue-header">
+          <h5>MAGNETIC</h5>
+        </div>
+
+        <div class="card">
+          <div id="picOver" class="card-image">
+            <img id="picRo" src="/photo/boat2.png" />
+          </div>
+
+        </div>
+
+
+      </div><! -- /darkblue panel -->
+    </div><!-- /col-md-4 -->
+
+
+    <div class="col-md-4 col-sm-4 mb">
+      <div class="grey-panel pn donut-chart">
+        <div class="grey-header">
+          <h5>TOGGLE SWITCH</h5>
+        </div>
+
+        <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Turn On/Off The Light">
+          <img id ="bulb" src="./photo/bulbOff.png" onclick="light()">
+        </a>
+        <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Turn On/Off Speaker">
+          <img id ="speaker" src="./photo/speakerOff.png" onclick="lampong()">
+        </a>
+
+
+      </div><! >
+    </div><!-- /col-md-4-->
+
+
+
+
+  </div><!-- /col-md-4 -->
+
+
+
+
+  <!--main content end-->
+  <!--footer start-->
+  <footer class="site-footer">
+    <div class="text-center">
+      2016 - Exceed Camp 13th.
+
+    </div>
+  </footer>
+  <!--footer end-->
+</section>
+
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+<script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+
+
+<!--common script for all pages-->
+<script src="js/materialize.js"></script>
+<script type="text/javascript" src="/js/canvasjs.min.js"></script>
+<script type="text/javascript" src="/js/smoothie.js"></script>
+<script src="/stylesheets/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-switch.js"></script>
+<script src="/libs/exceed.lib.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+<!--script for this page-->
+
+<script>
+var dataSort = [];
+var sonarValue = 0;
+//Recived Data//
+// dataSort = tester.split(",");
+
+
+setInterval(function(){
+  $.ajax({
+    url: 'http://10.32.176.4/exist1'
+  })
+  .done(function(data) {
+
+    dataSort = data.split(",");
+
+  });
+
+},100);
+
+setInterval(function(){
+  $.ajax({
+    url: 'http://10.32.176.4/exist2'
+  })
+  .done(function(data) {
+
+    sonarValue = data;
+
+  });
+
+},100);
+
+
+
+/////////////////////////////
+// Data
+
+
+
+var line1 = new TimeSeries();
+var timeInterval = 1000;
+var accelerator = 0;
+var checkGyro = false;
+
+
+setInterval(function(){
+  accelerator = Math.abs(parseInt(dataSort[0])+parseInt(dataSort[1])+parseInt(dataSort[2])) ;
+  if(accelerator<50){
+    if(accelerator>=30){
+      if(checkGyro == false){
+        Materialize.toast("Danger!!!",1000);
+      }
+      checkGyro = true;
+
+    }else{
+      checkGyro = false;
+    }
+  }else{
+    accelerator = 0.2;
+  }
+
+}, 100);
+
+function accelUp(){
+  accelerator++;
+  if(accelerator>=30 ){
+    Materialize.toast("DANGER!!!!",1000);
+
+  }
+}
+function accelDown(){
+  accelerator--;
+}
+// Add a random value to each line every second
+setInterval(function() {
+
+  line1.append(new Date().getTime(), ((accelerator)));
+}, timeInterval);
+
+
+// Add to SmoothieChart
+
+
+var chart = new SmoothieChart({horizontalLines:[{color:'#FE2E64',lineWidth:2,value:30}],maxValue:50,minValue:0,grid:{fillStyle:'#68dff0',strokeStyle:'#fefdff',verticalSections:0},labels:{fillStyle:'#fefdff'},timestampFormatter:SmoothieChart.timeFormatter}),
+canvas = document.getElementById('smoothie-chart'),
+series = new TimeSeries();
+
+chart.addTimeSeries(line1, {lineWidth:2,strokeStyle:'#fefdff'});
+chart.streamTo(canvas, 500);///////
+
+
+///////////////Rain Sensor/////////////
+var x = 0;
+var checkRain = false;
+
+
+setInterval(function(){
+  x = parseInt(dataSort[4]);
+  // console.log(x);
+  if(x<100)
+  {
+    //console.log(x);
+    if(x===1)
+    {
+      $("#percent").text("Rainfall : "+70+"%");
+      $('#progressRain').css('width', 70+'%').attr('aria-valuenow', 70);
+
+      $("#Warn").text("Raining");
+      document.getElementById('picRain').src='/photo/rain.gif'
+      if($('#roofToggle').is(':checked')){
+        Materialize.toast('Sun Roof has closed automatically.', 1000)
+        // alert("Sun Roof has closed automatically.");
+        $('#roofToggle').bootstrapSwitch("state",false);
+      }
+      if(checkRain === true){
+        checkRain = false;
+      }
+
+    }
+    else if(x===0)
+    {
+      $("#percent").text("Rainfall : "+100+"%");
+      $('#progressRain').css('width', 100+'%').attr('aria-valuenow', 100);
+      $("#Warn").text("Danger");
+      if(checkRain == false){
+        Materialize.toast("Rain Hard!!",1000)
+        document.getElementById('picRain').src='/photo/r2.gif'
+        checkRain = true;
+      }
+
+    }else{
+      $("#percent").text("Rainfall : "+0+"%");
+      $('#progressRain').css('width', 0+'%').attr('aria-valuenow', 0);
+      $("#Warn").text("Normal weather");
+      document.getElementById('picRain').src='/photo/sunny.gif'
+      if(checkRain == true){
+        checkRain = false;
+      }
+
+    }
+  }
+},200);
+
+
+// function Rain(){
+//   if(x<100)
+//   {
+//     x = x+10;
+//     $("#percent").text("Rainfall : "+x+"%");
+//     $('#progressRain').css('width', x+'%').attr('aria-valuenow', x);
+//     //console.log(x);
+//     if(x>=50 && x<80)
+//     {
+//       $("#Warn").text("Raining");
+//       document.getElementById('picRain').src='/photo/rain.gif'
+//       if($('#roofToggle').is(':checked')){
+//         Materialize.toast('Sun Roof has closed automatically.', 1000)
+//         // alert("Sun Roof has closed automatically.");
+//         $('#roofToggle').bootstrapSwitch("state",false);
+//       }
+//
+//     }
+//     else if(x>=80)
+//     {
+//       $("#Warn").text("Danger");
+//       Materialize.toast("Rain Hard!!",1000)
+//       document.getElementById('picRain').src='/photo/r2.gif'
+//     }
+//   }
+// }
+//
+// function Sun(){
+//   if(x<=100 && x>0) {
+//     x = x-10;
+//     $("#percent").text("Rainfall : "+x+"%");
+//     $('#progressRain').css('width', x+'%').attr('aria-valuenow', x);
+//     //console.log(x);
+//     if(x<50)
+//     {
+//       $("#Warn").text("Normal weather");
+//       document.getElementById('picRain').src='/photo/sunny.gif'
+//     }
+//     else if(x<80)
+//     {
+//       $("#Warn").text("Raining");
+//       document.getElementById('picRain').src='/photo/rain.gif'
+//     }
+//   }
+// }
+/////////////////
+// SUNROOF TOGGLE////////
+$("#roofToggle").bootstrapSwitch("state", false);
+
+
+
+$('#roofToggle').on('switchChange.bootstrapSwitch', function (event, state) {
+
+  if($('#roofToggle').is(':checked')){
+    if(x==1 || x==0){
+      Materialize.toast("Don't Do This!!!");
+      $('#roofToggle').bootstrapSwitch("state",false);
+    }else{
+      $("#statusSun").text("Status : ON");
+      $('#imagebox').attr('src','./photo/opensunroof.gif' );
+      $.ajax({
+        url: 'http://10.32.176.4/exist1/' + '2'
+      })
+      .done(function(data) {
+      });
+      Materialize.toast("Sun Roof is opened.",1000);
+    }
+
+  }else {
+    $("#statusSun").text("Status : OFF");
+    $('#imagebox').attr('src','./photo/close.gif')
+    $.ajax({
+      url: 'http://10.32.176.4/exist1/' + '1'
+    })
+    .done(function(data) {
+    });
+    Materialize.toast("Sun Roof is closed.",1000);
+  }
+
+
+
+
+
+});
+
+///////////////////
+
+////TOGGLESWITCH//////
+var lightBoo = false;
+var speakerBoo = false;
+
+
+
+function lampong(){
+  if(speakerBoo === false){
+    $('#speaker').attr('src','./photo/speakerOn.png' );
+    speakerBoo = true;
+    Materialize.toast("Speaker : Turned on.",1000)
+    if(lightBoo === false){
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '0,2'
+      })
+      .done(function(data) {
+
+      });
+    }else{
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '2,2'
+      })
+      .done(function(data) {
+
+      });
+    }
+  }else{
+    $('#speaker').attr('src','./photo/speakerOff.png' );
+    speakerBoo = false;
+    Materialize.toast("Speaker : Turned off.",1000)
+    if(lightBoo === false){
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '0,0'
+      })
+      .done(function(data) {
+
+      });
+    }else{
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '2,0'
+      })
+      .done(function(data) {
+
+      });
+    }
+
+  }
+}
+
+function light(){
+  if(lightBoo === false){
+    $('#bulb').attr('src','./photo/bulbOn.png' );
+    lightBoo = true;
+    Materialize.toast("Light : Turned on.",1000)
+    if(speakerBoo === false){
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '2,0'
+      })
+      .done(function(data) {
+
+      });
+    }else{
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '2,2'
+      })
+      .done(function(data) {
+
+      });
+    }
+
+  }else{
+    $('#bulb').attr('src','./photo/bulbOff.png' );
+    lightBoo = false;
+    Materialize.toast("Light : Turned off.",1000)
+    if(speakerBoo === false){
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '0,0'
+      })
+      .done(function(data) {
+
+      });
+    }else{
+      $.ajax({
+        url: 'http://10.32.176.4/exist2/' + '0,2'
+      })
+      .done(function(data) {
+
+      });
+    }
+  }
+
+}
+
+
+
+
+
+///////////////SONAR SYSTEM/////////////
+var sonarData = 0 ;
+var checkSonar = false;
+setInterval(function(){
+  sonarData = sonarValue;
+
+  if(sonarData<120){
+
+    if(sonarData <= 10 ){
+      $('#sonarPic').attr('src','./photo/sonar3.gif' );
+      $("#sonarStatus").text("Status : Danger!!!");
+      if(checkSonar == false){
+        Materialize.toast("DANGER!!!!",1000)
+        speakerBoo = false;
+        lampong();
+      }
+      checkSonar = true;
+
+    }else {
+      $('#sonarPic').attr('src','./photo/sonar0.gif' );
+      $("#sonarStatus").text("Status : Normal");
+      if(checkSonar == true){
+        if(speakerBoo == true){
+          lampong();
+        }
+      }
+
+      checkSonar = false;
+    }
+  }
+
+},1305);
+
+
+///////////MODEL//////////////
+function showModal2(){
+  $("#modal2").openModal();
+}
+/////////////////////////////
+
+
+////////////MAGNETIC////////////////
+function AnimateRotate(d){
+  $({deg: 0}).animate({deg: d}, {
+    step: function(now, fx){
+      $("#picRo").css({
+        transform: "rotate(" + now + "deg)"
+      });
+    }
+  });
+}
+
+setInterval(function(){
+  var data = parseInt(dataSort[3]); //  สมมติว่าตัวแปรนี้คือตัวแปรที่รับค่ามาจากฮาร์ดแวร์แล้ว
+  if(data>9)
+  AnimateRotate(180);
+  else if(data<-9)
+  AnimateRotate(0);
+  else if(data<0 && data>=-9)
+  AnimateRotate(10*(data+9));
+  else if(data>=0 && data<=9)
+  AnimateRotate(-10*(data+9));
+
+
+  // if(data>0 && data<=100){
+  //   if(data > 100){
+  //     AnimateRotate(-1*(data-180));
+  //   }
+  //   else {
+  //     AnimateRotate(180-data);
+  //   }
+  // }else if(data>-100 && data<0){
+  //   AnimateRotate(-1*data);
+  // }
+},700);
+////////////////////OVERALL BOAT STATUS///////////
+
+setInterval(function() {
+  var overallStat = 100-(((110-sonarData)+(100-(x*50))+(accelerator*3.1))/3);
+  $('#overallBoat').css('width', overallStat+'%').attr('aria-valuenow', overallStat);
+
+  if(sonarData<10 && x==0 && accelerator>=30){
+    $("#insTxt").text("Please fasten your seat belt. Warning: CRITICAL!!!! Since In front of your boat have obstacle , high wave and heavy rain. Be Careful:You should send SOS and please fasten your seat belt. Wating for help. wish you safety and GoodLuck. :)");
+    $('#insPic').attr('src','./photo/red.jpg' );
+  }else if(sonarData<10 && (x==1 || x==0)){
+    $("#insTxt").text("Warning:BE WARE!!! Since in front of your boat have heavy rain and obstacle.It so hard to control your boat. Be Careful:you need to turn off a sun roof , turn on light sign and avoid obstacle.Please fasten your seat belt.");
+    $('#insPic').attr('src','./photo/red.jpg' );
+  }else if(sonarData<10 && accelerator>=30){
+    $("#insTxt").text("Warning: BE WARE!!! Since In front of your boat have obstacle and high wave.It so hard to control your boat. Be Careful:Notice your crew about this situation ,slow down velocity and avoid obstacle.Please fasten your seat belt.");
+    $('#insPic').attr('src','./photo/red.jpg' );
+  }else if((x==1 || x==0) && accelerator>=30){
+    $("#insTxt").text("Warning:BE WARE!!! Since in front of your boat have heavy rain and high wave around your boat. Be Careful:Notice your crew about this situation ,slow down velocity ,turn off a sun roof and turn on light sign.Please fasten your seat belt.");
+    $('#insPic').attr('src','./photo/red.jpg' );
+  }else if(x==1 || x==0){
+    $("#insTxt").text("Warning: there are rainy maybe it make high wave in the moment of time. Be Careful:  you need to turn off a sun roof and turn on light sign.");
+    $('#insPic').attr('src','./photo/green.jpg' );
+  }else if(sonarData<10){
+    $("#insTxt").text("Warning:There are obstacle on your way. Be Careful: please avoid obstacle.");
+    $('#insPic').attr('src','./photo/green.jpg' );
+  }else if(accelerator>=30){
+    $("#insTxt").text("Warning:There are high wave around your boat. In the future maybe have heavy rain. Be Careful:Notice your crew about this situation and slow down velocity.");
+    $('#insPic').attr('src','./photo/green.jpg' );
+  }else {
+    $("#insTxt").text("You're safe :D");
+    $('#insPic').attr('src','./photo/green.jpg' );
+  }
+
+
+
+
+
+}, 100);
+
+
+///////////////////////////////////////
+
+//////////////
+
+
+</script>
+
+</body>
 </html>

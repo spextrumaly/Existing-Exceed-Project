@@ -1,0 +1,69 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(/fonts/roboto/Roboto-Thin.woff);
+}
+.setBG{
+  background-color: white;
+}
+.setFont{
+    font-family: defaultFont;
+    font-size: 30px;
+}
+#smoothie-chart{
+  margin-top: -45px;
+}
+#picRain{
+  width: 120px;
+  height: 90px;
+
+}
+#sonarPic{
+  width: 150px;
+  height: 150px;
+}
+#cardCont{
+  margin-top: -120px;
+}
+#RAINHEAD{
+  	color: #6E6E6E;
+}
+.tester{
+  width: 304px;
+  height: 209px;
+}
+#bulb{
+  width: 150px;
+  height: 150px;
+
+}
+#speaker{
+  width: 150px;
+  height: 150px;
+}
+#imagebox{
+  width: 70%;
+  height: 70%;
+  margin-bottom: -50px;
+  margin-top: -10px;
+}
+
+
+#picOver{
+  background-image: url("/photo/Compass-1.png");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   width: 200px;
+   height: 200px;
+   margin-top: -15px;
+   margin-left: 65px;
+}
+
+/* Custom Stylesheet */
+/**
+* Use this file to override Materialize files so you can update
+* the core Materialize files in the future
+*
+* Made By MaterializeCSS.com
+*/
